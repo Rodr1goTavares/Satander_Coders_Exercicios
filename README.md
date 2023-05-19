@@ -1,5 +1,2 @@
-## Resolução dos os exercícios do Satander Coders
-
-#### . Linguagem Java
-
+## Resolução dos exercícios do Satander Coders (Java)
 
