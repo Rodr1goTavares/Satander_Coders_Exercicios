@@ -3,6 +3,12 @@ package coders_exercices.ex_3;
 import java.util.InputMismatchException;
 import java.util.Scanner;
 
+/*
+ *
+ * Resolução do exercício 3
+ * 
+ */
+
 public class FruitList {
     
     public static void start() {
@@ -18,7 +24,7 @@ public class FruitList {
                     throw new InputMismatchException("Invalid argment");
                 }
             }
-
+            
             showfruitList(fruitList);
             start();
         }

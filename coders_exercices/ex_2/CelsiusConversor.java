@@ -3,6 +3,12 @@ package coders_exercices.ex_2;
 import java.util.InputMismatchException;
 import java.util.Scanner;
 
+/*
+ *
+ * Resolução do exercício 2
+ * 
+ */
+
 public class CelsiusConversor {
     
     public static void start() {
