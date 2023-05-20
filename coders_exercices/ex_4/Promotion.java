@@ -38,7 +38,7 @@ public class Promotion {
         String result = "<< Good choice ! >>";
         for (String promotionalItem : promotions) {
             if (promotionalItem.equals(product)) {
-                result = "<< Nice choice, this product is on promotion ! >>";
+                result = "<<** Nice choice, this product is on promotion ! **>>";
             }
         }
         return result;

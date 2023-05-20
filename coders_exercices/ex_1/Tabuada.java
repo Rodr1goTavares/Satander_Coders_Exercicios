@@ -14,24 +14,29 @@ public class Tabuada {
     public static void start() {
         Scanner scanner = new Scanner(System.in);
         try {
-            System.out.println("Say a number:");
+            System.out.println("<< Say a number: >>");
             int number = scanner.nextInt();
-            scanner.close();
-
-            calc(number);
+            
+            System.out.println(calc(number));
+            start();
         }
         catch (InputMismatchException e) {
             System.out.println("Invalid argument. (Only 0-10 numbers)" + "\n" + e);
         }
         finally {
-            start();
+            scanner.close();
         } 
     }
 
-    private static void calc(int number) {
+    private static String calc(int number) {
+        StringBuilder table = new StringBuilder();
+        table.append("--------<<" + number + ">>--------");
+
         for (int i = 1; i < 11; i++) {
-            String table = number + " x " + i + " = " + (number * i); 
-            System.out.println(table);
+            table.append("\n" + number + " x " + i + " = " + (number * i)); 
         }
+
+        table.append("\n--------------------");
+        return table.toString();
     }
 }

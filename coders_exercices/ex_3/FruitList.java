@@ -25,7 +25,7 @@ public class FruitList {
                 }
             }
             
-            showfruitList(fruitList);
+            System.out.println(showfruitList(fruitList));
             start();
         }
         catch (Exception e) {
@@ -37,14 +37,16 @@ public class FruitList {
         }
     }
     
-    private static void showfruitList(String[] fruitList) {
+    private static String showfruitList(String[] fruitList) {
         StringBuilder fruitListString = new StringBuilder();
-        fruitListString.append("Fruits in your cart:");
+        fruitListString.append("\nFruits in your cart:");
+        fruitListString.append("\n--------------------");
         
         for (int i = 0; i < fruitList.length; i++) {
             fruitListString.append("\n" + fruitList[i]);
         }
 
-        System.out.println(fruitListString.toString());
+        fruitListString.append("\n--------------------");
+        return fruitListString.toString();
     }   
 }
