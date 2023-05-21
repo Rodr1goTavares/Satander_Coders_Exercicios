@@ -13,19 +13,20 @@ public class Tabuada {
 
     public static void start() {
         Scanner scanner = new Scanner(System.in);
-        try {
-            System.out.println("<< Say a number: >>");
-            int number = scanner.nextInt();
-            
-            System.out.println(calc(number));
-            start();
+        boolean repeat = true;
+        while (repeat) {
+            try {         
+                System.out.println("<< Say a number: >>");
+                int number = scanner.nextInt();
+                System.out.println(calc(number));
+            }
+            catch (InputMismatchException e) {
+                System.out.println("Invalid argument. (Only 0-10 numbers)" + "\n" + e);
+                repeat = false;
+                start();
+            }       
         }
-        catch (InputMismatchException e) {
-            System.out.println("Invalid argument. (Only 0-10 numbers)" + "\n" + e);
-        }
-        finally {
-            scanner.close();
-        } 
+        scanner.close();
     }
 
     private static String calc(int number) {
