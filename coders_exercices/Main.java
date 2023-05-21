@@ -1,6 +1,6 @@
 package coders_exercices;
 
-import coders_exercices.ex6_final_challange.TipCalculator;
+import coders_exercices.ex_6_final_challange.TipCalculator;
 
 public class Main {
     public static void main(String[] args) {

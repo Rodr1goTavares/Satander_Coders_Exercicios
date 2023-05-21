@@ -1,4 +1,4 @@
-package coders_exercices.ex6_final_challange;
+package coders_exercices.ex_6_final_challange;
 
 import java.util.HashMap;
 import java.util.Map;
