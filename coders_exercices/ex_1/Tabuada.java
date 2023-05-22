@@ -17,11 +17,11 @@ public class Tabuada {
         while (repeat) {
             try {         
                 System.out.println("<< Say a number: >>");
-                int number = scanner.nextInt();
+                long number = scanner.nextLong();
                 System.out.println(calc(number));
             }
             catch (InputMismatchException e) {
-                System.out.println("Invalid argument. (Only 0-10 numbers)" + "\n" + e);
+                System.out.println("Invalid argument. (Only 0-9223372036854775807 numbers)" + "\n" + e);
                 repeat = false;
                 start();
             }       
@@ -29,7 +29,7 @@ public class Tabuada {
         scanner.close();
     }
 
-    private static String calc(int number) {
+    private static String calc(long number) {
         StringBuilder table = new StringBuilder();
         table.append("--------<<" + number + ">>--------");
 

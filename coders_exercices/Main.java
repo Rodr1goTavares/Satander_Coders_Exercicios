@@ -11,11 +11,11 @@ public class Main {
     public static void main(String[] args) {
         // <<< Todos os exercícios abaixo: >>> 
         
-        // Tabuada.start();
+        Tabuada.start();
         // CelsiusConversor.start();
         // FruitList.start();
         // Promotion.start();
         // Promotion2.start();
-        TipCalculator.start();
+        // TipCalculator.start();
     }
 }
